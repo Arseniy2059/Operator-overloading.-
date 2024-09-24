@@ -47,6 +47,4 @@ print(10 != 20)
 
 print(len(h1))
 print(len(h2))
-#self.name == other.name
-#def __lt__(self, other):
-    #return self.number_of_floors < other.number_of_floors
+self.name == other.name

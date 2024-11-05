@@ -44,7 +44,8 @@ class House:
         if isinstance(value, House):
             self.number_of_floors += value.number_of_floors
         elif isinstance(value, int):
-            return self
+            self.number_of_floors += value
+        return self
 
     def __radd__(self, value):
         return self.__add__(value)
@@ -75,3 +76,4 @@ print(h1 > h2) # __gt__
 print(h1 >= h2) # __ge__
 print(h1 < h2) # __lt__
 print(h1 <= h2) # __le__
+print(h1 != h2) # __ne__
